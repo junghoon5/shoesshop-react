@@ -8,7 +8,7 @@ import Detail from './components/Detail';
 import { Footer } from './components/Footer';
 import About from './components/About';
 import Cart from './components/Cart';
-import { useSelector } from 'react-redux';
+
 
 export const Context1 = createContext()
 
@@ -17,8 +17,8 @@ function App() {
   console.log(shoes)
   const navigate = useNavigate()
   const [remain, setRemain] = useState([10,11,12])
-  const user = useSelector(state => state.user)
-  console.log(user)
+  // const user = useSelector(state => state.user)
+  // console.log(user)
 
   return (
     <div className="App">
